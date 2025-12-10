@@ -1,0 +1,108 @@
+n=3, normalized
+Percentage Recovered: 1.0
+n=3, harmonic
+Percentage Recovered: 1.0
+n=3, binary
+Percentage Recovered: 1.0
+n=4, normalized
+Percentage Recovered: 0.74
+n=4, harmonic
+Percentage Recovered: 0.82
+n=4, binary
+Percentage Recovered: 0.98
+n=5, normalized
+Percentage Recovered: 0.61
+n=5, harmonic
+Percentage Recovered: 0.56
+n=5, binary
+Percentage Recovered: 0.96
+n=6, normalized
+Percentage Recovered: 0.62
+n=6, harmonic
+Percentage Recovered: 0.67
+n=6, binary
+Percentage Recovered: 0.98
+n=7, normalized
+Percentage Recovered: 0.76
+n=7, harmonic
+Percentage Recovered: 0.68
+n=7, binary
+Percentage Recovered: 0.97
+n=8, normalized
+Percentage Recovered: 0.78
+n=8, harmonic
+Percentage Recovered: 0.62
+n=8, binary
+Percentage Recovered: 0.95
+n=9, normalized
+Percentage Recovered: 0.61
+n=9, harmonic
+Percentage Recovered: 0.53
+n=9, binary
+Percentage Recovered: 1.0
+n=10, normalized
+Percentage Recovered: 0.63
+n=10, harmonic
+Percentage Recovered: 0.63
+n=10, binary
+Percentage Recovered: 0.96
+n=11, normalized
+Percentage Recovered: 0.58
+n=11, harmonic
+Percentage Recovered: 0.47
+n=11, binary
+Percentage Recovered: 0.97
+n=12, normalized
+Percentage Recovered: 0.48
+n=12, harmonic
+Percentage Recovered: 0.53
+n=12, binary
+Percentage Recovered: 0.95
+n=13, normalized
+Percentage Recovered: 0.36
+n=13, harmonic
+Percentage Recovered: 0.28
+n=13, binary
+Percentage Recovered: 0.96
+n=14, normalized
+Percentage Recovered: 0.2
+n=14, harmonic
+Percentage Recovered: 0.32
+n=14, binary
+Percentage Recovered: 0.98
+n=15, normalized
+Percentage Recovered: 0.27
+n=15, harmonic
+Percentage Recovered: 0.2
+n=15, binary
+Percentage Recovered: 0.98
+n=16, normalized
+Percentage Recovered: 0.09
+n=16, harmonic
+Percentage Recovered: 0.22
+n=16, binary
+Percentage Recovered: 0.97
+n=17, normalized
+Percentage Recovered: 0.15
+n=17, harmonic
+Percentage Recovered: 0.15
+n=17, binary
+Percentage Recovered: 0.95
+n=18, normalized
+Percentage Recovered: 0.11
+n=18, harmonic
+Percentage Recovered: 0.11
+n=18, binary
+Percentage Recovered: 0.99
+n=19, normalized
+Percentage Recovered: 0.06
+n=19, harmonic
+Percentage Recovered: 0.13
+n=19, binary
+Percentage Recovered: 0.97
+n=20, normalized
+Percentage Recovered: 0.02
+n=20, harmonic
+Percentage Recovered: 0.04
+n=20, binary
+Percentage Recovered: 0.98

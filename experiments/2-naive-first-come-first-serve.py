@@ -13,7 +13,7 @@ def analyze_naive_sit_as_you_come(n, utility_func, utility_name, NUM_RANDOM_SAMP
     for ranking in rankings:
         profile = generate_utilities(ranking, utility_func, n)
         
-        final_arr = run_naive_sit_as_you_come(people, profile, utility_func, utility_name)
+        final_arr = run_naive_sit_as_you_come(n, people, profile, utility_func, utility_name)
 
         if(is_stable(profile, final_arr)):
             num_times_recovered += 1

@@ -318,7 +318,7 @@ def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_
   arrangement[max_seat_idx] = person
   return arrangement
 
-def run_naive_sit_as_you_come(people, profile, utility_func, utility_name):
+def run_naive_sit_as_you_come(n, people, profile, utility_func, utility_name):
   starting_order = generate_random_arrangement(people)
   final_arrangement = ['' for i in range(n)]  #['', '', ...]
 

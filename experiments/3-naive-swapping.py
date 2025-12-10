@@ -11,11 +11,11 @@ def analyze_naive_swapping(n, utility_func, utility_name, NUM_RANDOM_SAMPLES=7_9
 
     num_times_recovered = 0
     for ranking in rankings:
-        profile = generate_utilites(ranking, utility_func, n)
+        profile = generate_utilities(ranking, utility_func, n)
         
-        final_arr = run_naive_swapping(people, profile, utility_func)
+        final_arr = run_naive_swapping(people, profile, utility_func, utility_name)
         
-        if(is_stable(profile, final_arr)):
+        if(final_arr != None and is_stable(profile, final_arr)):
             num_times_recovered += 1
 
     print("Percentage Recovered:", num_times_recovered/NUM_RANDOM_SAMPLES)
