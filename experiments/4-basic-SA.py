@@ -10,6 +10,7 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
   people = [excel_label(i) for i in range(n)]
   rankings = [generate_random_rankings(people) for _ in range(NUM_RANDOM_SAMPLES)]
 
+  #metrics
   num_times_recovered = 0
   num_times_not_recovered_bc_no_stable_solution = 0
   num_times_not_recovered_but_stable_solution = 0
@@ -19,12 +20,12 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
 
     num_stable = 0
 
-    # Parallelize the 10 SA runs
-    sa_args = [(n, profile, utility_func, utility_name, findMax) for _ in range(NUM_PARALLEL_RUNS)]
+    #parallelize 10 SA runs
+    sa_args = [(n, people, profile, utility_func, utility_name, findMax) for _ in range(NUM_PARALLEL_RUNS)]
     with Pool(processes=min(NUM_PARALLEL_RUNS, cpu_count())) as pool:
       final_arrangements = pool.map(run_single_sa, sa_args)
 
-    # Check if any found a stable arrangement
+    #check results from SA runs
     for final_arrangement in final_arrangements:
       #found a stable arrangement
       if(is_stable(profile, final_arrangement)):
@@ -33,15 +34,9 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
 
     if(num_stable == 0):
       #see if a stable matching exists, for such a profile
-      all_arrangements = get_circular_arrangements(people)
-
-      stable_exists = False
-      for arr in all_arrangements:
-        if(is_stable(profile, arr)):
-          stable_exists = True
-
-      if(stable_exists):
+      if(does_stable_arr_exist_for_profile(people, profile)):
         num_times_not_recovered_but_stable_solution += 1
+
       else:
         num_times_not_recovered_bc_no_stable_solution += 1
     else:
