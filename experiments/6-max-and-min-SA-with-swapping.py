@@ -148,9 +148,16 @@ def main():
     ]
 
     for n in range(20, 27):
+        print("="*80)
+        print(f"n={n}")
+        print("\n")
+
         for utility_func, utility_name in utility_functions:
-            print(f"n={n}, {utility_name}")
+            print(f"{utility_name}")
             analyze_simulated_annealing_max_min_swapping_blocking_pairs_accuracy(n, utility_func, utility_name, NUM_SAMPLES)
+            print("-"*80)
+        
+        print("="*80)
 
 if __name__ == "__main__":
     main()

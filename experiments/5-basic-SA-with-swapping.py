@@ -100,9 +100,16 @@ def main():
     ]
 
     for n in range(3, 21):
-        for utility_func, utility_name in utility_functions:
-            print(f"n={n}, {utility_name}")
-            analyze_simulated_annealing_swapping_blocking_pairs_accuracy(n, utility_func, utility_name, NUM_SAMPLES)
+      print("="*80)
+      print(f"n={n}")
+      print("\n")
 
+      for utility_func, utility_name in utility_functions:
+          print(f"{utility_name}")
+          analyze_simulated_annealing_swapping_blocking_pairs_accuracy(n, utility_func, utility_name, NUM_SAMPLES)
+          print("-"*80)
+      
+      print("="*80)
+      
 if __name__ == "__main__":
     main()
