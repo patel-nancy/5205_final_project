@@ -54,22 +54,19 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
 def main():
     # #TODO: format!
 
-    # NUM_RANDOM_SAMPLES = 1000
+    NUM_SAMPLES = 100
 
-    # utility_functions = [
-    #   (ranking_to_normalized_utility, "normalized"),
-    #   (ranking_to_harmonic_utility, "harmonic"),
-    #   (ranking_to_binary_utility, "binary")
-    # ]
+    utility_functions = [
+      (ranking_to_normalized_utility, "normalized"),
+      (ranking_to_harmonic_utility, "harmonic"),
+      (ranking_to_binary_utility, "binary")
+    ]
 
 
-    # for n in range(4, 10):
-    #     results = []
-    #     for utility_func, utility_name in utility_functions:
-    #         result = analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RANDOM_SAMPLES)
-    #         results.append(result) 
-
-    analyze_simulated_annealing_accuracy(7, ranking_to_harmonic_utility, "harmonic", 100)
+    for n in range(4, 10):
+        results = []
+        for utility_func, utility_name in utility_functions:
+            analyze_simulated_annealing_accuracy(7, ranking_to_harmonic_utility, "harmonic", NUM_RANDOM_SAMPLES)
 
 if __name__ == "__main__":
   main()
