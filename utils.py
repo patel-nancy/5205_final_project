@@ -3,6 +3,7 @@ import random
 import math
 
 SEED = 5 #global for reproducibility
+random.seed(SEED)
 
 def excel_label(i):
   #A, B, ..., Z, AA, ...
@@ -37,7 +38,6 @@ def get_circular_arrangements(people):
     return list(arrangements)
 
 def generate_random_arrangement(people):
-  # random.seed(SEED)
   random.shuffle(people)
   return tuple(people)
 
@@ -60,7 +60,6 @@ def generate_all_rankings(people):
 
 def generate_random_ranking_for_person(person, people):
   others = [o for o in people if o != person]
-  # random.seed(SEED)
   random.shuffle(others)
   return tuple(others)
 
@@ -147,7 +146,6 @@ def is_stable(profile, arrangement):
 
 def swap_seats(prev_arrangement):
   """ Returns: an arrangement with two (distinct) seats swapped"""
-  # random.seed(SEED)
   i = random.randrange(0, len(prev_arrangement))
   j = random.randrange(0, len(prev_arrangement))
 
@@ -164,7 +162,6 @@ def swap_seats(prev_arrangement):
 def run_round(profile, prev_arrangement, T, findMax=True):
   """ Returns: next arrangement, based on utility increasing/decreasing total utility"""
   T_min = 0.001 #NOTE: could be lower?
-  # random.seed(SEED)
 
   prev_utility = calculate_total_utility(profile, prev_arrangement)
 
@@ -525,7 +522,6 @@ def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_
       if seat == '':
         possible_seat_idxs.append(seat_idx)
 
-    # random.seed(SEED)
     max_seat_idx = random.choice(possible_seat_idxs)
 
   arrangement[max_seat_idx] = person
