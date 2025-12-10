@@ -1,5 +1,6 @@
 import itertools
 import random
+import math
 
 SEED = 5 #global for reproducibility
 
@@ -36,7 +37,7 @@ def get_circular_arrangements(people):
     return list(arrangements)
 
 def generate_random_arrangement(people):
-  random.seed(SEED)
+  # random.seed(SEED)
   random.shuffle(people)
   return tuple(people)
 
@@ -59,7 +60,7 @@ def generate_all_rankings(people):
 
 def generate_random_ranking_for_person(person, people):
   others = [o for o in people if o != person]
-  random.seed(SEED)
+  # random.seed(SEED)
   random.shuffle(others)
   return tuple(others)
 
@@ -140,7 +141,100 @@ def find_blocking_pair(profile, arrangement):
             return [seat, other]
   return None
 
-
 def is_stable(profile, arrangement):
   blocking_pair = find_blocking_pair(profile, arrangement)
   return blocking_pair == None
+
+def swap_seats(prev_arrangement):
+  """ Returns: an arrangement with two (distinct) seats swapped"""
+  # random.seed(SEED)
+  i = random.randrange(0, len(prev_arrangement))
+  j = random.randrange(0, len(prev_arrangement))
+
+  while i == j:
+    j = random.randrange(0, len(prev_arrangement))
+
+  next_arrangement = list(prev_arrangement)
+  next_arrangement[i] = prev_arrangement[j]
+  next_arrangement[j] = prev_arrangement[i]
+
+  return tuple(next_arrangement)
+
+
+def run_round(profile, prev_arrangement, T, findMax=True):
+  """ Returns: next arrangement, based on utility increasing/decreasing total utility"""
+  T_min = 0.001 #NOTE: could be lower?
+  # random.seed(SEED)
+
+  prev_utility = calculate_total_utility(profile, prev_arrangement)
+
+  next_arrangement = swap_seats(prev_arrangement)
+  next_utility = calculate_total_utility(profile, next_arrangement)
+
+  #looking for global MAX
+  if findMax:
+    if next_utility >= prev_utility:
+      return next_arrangement
+    else:
+      #next_utility < prev_utility
+      x = random.random()
+
+      if(T < T_min):
+        prob = 0
+      else:
+        prob = math.exp((next_utility-prev_utility)/T)
+
+      if(x <= prob):
+        return prev_arrangement
+      else:
+        return next_arrangement
+    
+  #global MIN
+  else:
+    if next_utility <= prev_utility:
+      return next_arrangement
+    else:
+      #next_utility > prev_utility
+      x = random.random()
+
+      if(T < T_min):
+        prob = 0
+      else:
+        prob = math.exp((prev_utility-next_utility)/T)
+      
+      if(x <= prob):
+        return prev_arrangement
+      else:
+        return next_arrangement
+
+def run_simulated_annealing(n, profile, utility_func, utility_name, findMax=True):
+  NUM_TIMES_TO_BE_CONVERGENT = 15
+  people = [excel_label(i) for i in range(n)]
+
+  #initial parameters
+  curr_arrangement = generate_random_arrangement(people) #technically this is more than the reduced number of arrangements...
+  T = 2*n #NOTE: typically upper bound of total utility. normalized/binary/harmonic UB = 1*2*n=2n
+  MAX_ROUNDS = 10000
+  gamma = 0.99
+  prev_and_curr_same = 0
+
+  for k in range(MAX_ROUNDS):
+    prev_arrangement = curr_arrangement
+    curr_arrangement = run_round(profile, curr_arrangement, T, findMax)
+    T *= gamma
+
+    if(prev_arrangement == curr_arrangement):
+      prev_and_curr_same += 1
+    else:
+      prev_and_curr_same = 0
+
+    #converged (previous and current arrangement have been the same X times)
+    if(prev_and_curr_same > NUM_TIMES_TO_BE_CONVERGENT):
+      break
+
+  return curr_arrangement
+  
+def run_single_sa(args):
+  """Helper function to run a single SA run - used for parallelization."""
+  n, profile, utility_func, utility_name, findMax = args
+  return run_simulated_annealing(n, profile, utility_func, utility_name, findMax)

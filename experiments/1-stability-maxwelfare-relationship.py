@@ -87,15 +87,13 @@ def main():
     print("SEATING ARRANGEMENT STABILITY-WELFARE ANALYSIS")
     print("="*80)
 
-    for n in range(4, 10):
-        # Test different utility functions
-        
-        utility_functions = [
-            (ranking_to_normalized_utility, "normalized"),
-            (ranking_to_harmonic_utility, "harmonic"),
-            (ranking_to_binary_utility, "binary")
-        ]
+    utility_functions = [
+      (ranking_to_normalized_utility, "normalized"),
+      (ranking_to_harmonic_utility, "harmonic"),
+      (ranking_to_binary_utility, "binary")
+    ]
 
+    for n in range(4, 10):    
         results = []
         for utility_func, utility_name in utility_functions:
             result = analyze_stability_welfare_relationship(n, num_processes, utility_func, utility_name)
