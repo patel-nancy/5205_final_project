@@ -66,7 +66,8 @@ def main():
     for n in range(4, 10):
         results = []
         for utility_func, utility_name in utility_functions:
-            analyze_simulated_annealing_accuracy(7, ranking_to_harmonic_utility, "harmonic", NUM_RANDOM_SAMPLES)
+            print(f"n={n}, {utility_name}")
+            analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_SAMPLES)
 
 if __name__ == "__main__":
   main()
