@@ -5,75 +5,75 @@ Percentage Recovered: 1.0
 n=3, binary
 Percentage Recovered: 1.0
 n=4, normalized
-Percentage Recovered: 0.41
+Percentage Recovered: 0.6
 n=4, harmonic
-Percentage Recovered: 0.37
+Percentage Recovered: 0.45
 n=4, binary
-Percentage Recovered: 0.84
+Percentage Recovered: 0.87
 n=5, normalized
-Percentage Recovered: 0.1
+Percentage Recovered: 0.22
 n=5, harmonic
-Percentage Recovered: 0.08
+Percentage Recovered: 0.2
 n=5, binary
-Percentage Recovered: 0.78
+Percentage Recovered: 0.7
 n=6, normalized
-Percentage Recovered: 0.02
+Percentage Recovered: 0.11
 n=6, harmonic
-Percentage Recovered: 0.03
+Percentage Recovered: 0.16
 n=6, binary
 Percentage Recovered: 0.53
 n=7, normalized
-Percentage Recovered: 0.02
+Percentage Recovered: 0.05
 n=7, harmonic
-Percentage Recovered: 0.06
+Percentage Recovered: 0.05
 n=7, binary
-Percentage Recovered: 0.45
+Percentage Recovered: 0.44
 n=8, normalized
-Percentage Recovered: 0.01
+Percentage Recovered: 0.02
 n=8, harmonic
-Percentage Recovered: 0.0
+Percentage Recovered: 0.03
 n=8, binary
-Percentage Recovered: 0.34
+Percentage Recovered: 0.32
 n=9, normalized
 Percentage Recovered: 0.0
 n=9, harmonic
-Percentage Recovered: 0.01
+Percentage Recovered: 0.03
 n=9, binary
-Percentage Recovered: 0.23
+Percentage Recovered: 0.39
 n=10, normalized
 Percentage Recovered: 0.0
 n=10, harmonic
-Percentage Recovered: 0.0
+Percentage Recovered: 0.02
 n=10, binary
-Percentage Recovered: 0.23
+Percentage Recovered: 0.25
 n=11, normalized
-Percentage Recovered: 0.0
+Percentage Recovered: 0.02
 n=11, harmonic
 Percentage Recovered: 0.0
 n=11, binary
-Percentage Recovered: 0.28
+Percentage Recovered: 0.32
 n=12, normalized
-Percentage Recovered: 0.0
+Percentage Recovered: 0.01
 n=12, harmonic
 Percentage Recovered: 0.0
 n=12, binary
-Percentage Recovered: 0.25
+Percentage Recovered: 0.31
 n=13, normalized
 Percentage Recovered: 0.0
 n=13, harmonic
 Percentage Recovered: 0.0
 n=13, binary
-Percentage Recovered: 0.18
+Percentage Recovered: 0.26
 n=14, normalized
 Percentage Recovered: 0.0
 n=14, harmonic
 Percentage Recovered: 0.0
 n=14, binary
-Percentage Recovered: 0.2
+Percentage Recovered: 0.25
 n=15, normalized
 Percentage Recovered: 0.0
 n=15, harmonic
-Percentage Recovered: 0.01
+Percentage Recovered: 0.0
 n=15, binary
 Percentage Recovered: 0.22
 n=16, normalized
@@ -81,28 +81,28 @@ Percentage Recovered: 0.0
 n=16, harmonic
 Percentage Recovered: 0.0
 n=16, binary
-Percentage Recovered: 0.15
+Percentage Recovered: 0.22
 n=17, normalized
 Percentage Recovered: 0.0
 n=17, harmonic
 Percentage Recovered: 0.0
 n=17, binary
-Percentage Recovered: 0.22
+Percentage Recovered: 0.23
 n=18, normalized
 Percentage Recovered: 0.0
 n=18, harmonic
 Percentage Recovered: 0.0
 n=18, binary
-Percentage Recovered: 0.13
+Percentage Recovered: 0.21
 n=19, normalized
 Percentage Recovered: 0.0
 n=19, harmonic
 Percentage Recovered: 0.0
 n=19, binary
-Percentage Recovered: 0.14
+Percentage Recovered: 0.17
 n=20, normalized
 Percentage Recovered: 0.0
 n=20, harmonic
 Percentage Recovered: 0.0
 n=20, binary
-Percentage Recovered: 0.12
+Percentage Recovered: 0.21
