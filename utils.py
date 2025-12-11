@@ -334,7 +334,8 @@ def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_
       if neighbors[1] != '':
         individual_welfare += profile[person][neighbors[1]]
 
-      if (individual_welfare >= (median_individual_welfare)):
+      #sit next to the guests that are closest to your top 
+      if (individual_welfare >= (median_individual_welfare) and individual_welfare >= max_individual_welfare):
         max_individual_welfare = individual_welfare
         max_seat_idx = seat_idx
 
@@ -361,7 +362,7 @@ def run_naive_sit_as_you_come(n, people, profile, utility_func, utility_name):
 
   return final_arrangement
 
-def run_naive_swapping(people, profile, utility_func, utility_name):
+def run_naive_swapping(people, profile):
   starting_arrangement = generate_random_arrangement(people)
   init_blocking_pair = find_blocking_pair(profile, starting_arrangement)
 
