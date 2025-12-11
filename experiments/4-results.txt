@@ -1,0 +1,120 @@
+================================================================================
+n=4
+
+
+normalized
+Percentage Recovered: 0.53
+Percentage Not Recovered (No Stable Solution Exists): 0.22
+Percentage Not Recovered (Stable Solution Exists): 0.25
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.54
+Percentage Not Recovered (No Stable Solution Exists): 0.17
+Percentage Not Recovered (Stable Solution Exists): 0.29
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.98
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.02
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=5
+
+
+normalized
+Percentage Recovered: 0.53
+Percentage Not Recovered (No Stable Solution Exists): 0.35
+Percentage Not Recovered (Stable Solution Exists): 0.12
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.52
+Percentage Not Recovered (No Stable Solution Exists): 0.28
+Percentage Not Recovered (Stable Solution Exists): 0.2
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.79
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.21
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=6
+
+
+normalized
+Percentage Recovered: 0.64
+Percentage Not Recovered (No Stable Solution Exists): 0.14
+Percentage Not Recovered (Stable Solution Exists): 0.22
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.46
+Percentage Not Recovered (No Stable Solution Exists): 0.12
+Percentage Not Recovered (Stable Solution Exists): 0.42
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.6
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.4
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=7
+
+
+normalized
+Percentage Recovered: 0.66
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.34
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.4
+Percentage Not Recovered (No Stable Solution Exists): 0.04
+Percentage Not Recovered (Stable Solution Exists): 0.56
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.49
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.51
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=8
+
+
+normalized
+Percentage Recovered: 0.6
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.4
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.3
+Percentage Not Recovered (No Stable Solution Exists): 0.03
+Percentage Not Recovered (Stable Solution Exists): 0.67
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.45
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.55
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=9
+
+
+normalized
+Percentage Recovered: 0.63
+Percentage Not Recovered (No Stable Solution Exists): 0.01
+Percentage Not Recovered (Stable Solution Exists): 0.36
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.22
+Percentage Not Recovered (No Stable Solution Exists): 0.02
+Percentage Not Recovered (Stable Solution Exists): 0.76
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 0.46
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.54
+--------------------------------------------------------------------------------
+================================================================================
