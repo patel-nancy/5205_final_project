@@ -123,6 +123,8 @@ def analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func,
         else:
             if(debug):
                 print("Found a stable arrangement after initial (MAX) SA. Max welfare arrangement is stable.")
+            num_times_recovered += 1
+       
 
     print("Percentage Recovered:", num_times_recovered/NUM_RANDOM_SAMPLES)
     #how many recovered arrangements were from SA versus SA + swapping
