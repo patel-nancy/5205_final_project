@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from utils import *
 from multiprocessing import Pool, cpu_count
 
-def analyze_simulated_annealing_max_min_swappping_blocking_pairs(n, utility_func, utility_name, NUM_RANDOM_SAMPLES=7_962_624, debug=False):
+def analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func, utility_name, NUM_RANDOM_SAMPLES=7_962_624, debug=False):
     NUM_PARALLEL_RUNS = 10 # PARALLELIZED
     MAX_N_TO_BRUTE_FORCE_CHECK = 12
 
@@ -52,7 +52,7 @@ def analyze_simulated_annealing_max_min_swappping_blocking_pairs(n, utility_func
                 final = run_swap_blocking_pairs(profile, final_arr, blocking_pair)
                 if(final != None):
                     num_stable += 1
-                    num_times_found_after_swapping_pairs += 1
+                    num_times_found_after_initial_swapping_pairs += 1
                     break
 
             #after swapping blocking pairs, did not find a stable arrangement
@@ -128,7 +128,7 @@ def analyze_simulated_annealing_max_min_swappping_blocking_pairs(n, utility_func
     #how many recovered arrangements were from SA versus SA + swapping
     if(num_times_recovered > 0):
         print("Percentage of Recovered Found After Initial SA:", num_times_found_after_initial_SA/num_times_recovered)
-        print("Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs:", num_times_found_after_swapping_pairs/num_times_recovered)
+        print("Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs:", num_times_found_after_initial_swapping_pairs/num_times_recovered)
         print("Percentage of Recovered Found After Second SA:", num_times_found_after_second_SA/num_times_recovered)
         print("Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs:", num_times_found_after_second_swapping_pairs/num_times_recovered)
 
@@ -154,7 +154,7 @@ def main():
 
         for utility_func, utility_name in utility_functions:
             print(f"{utility_name}")
-            analyze_simulated_annealing_max_min_swapping_blocking_pairs_accuracy(n, utility_func, utility_name, NUM_SAMPLES)
+            analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func, utility_name, NUM_SAMPLES)
             print("-"*80)
         
         print("="*80)
