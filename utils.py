@@ -16,6 +16,13 @@ def excel_label(i):
     i -= 1
   return s
 
+def assign_people_to_classes(people, classes):
+  class_assignment = {}
+  for p in people:
+    class_assignment[p] = random.choice(classes)
+
+  return class_assignment
+
 # NOTE: there (n-1)!/2 arrangements
 # (n-1)! for sliding (explanation: https://www.youtube.com/watch?v=TgJMVLSjpOc)
 # divide by 2 for cw/ccw
@@ -67,6 +74,15 @@ def generate_random_ranking_for_person(person, people):
 def generate_random_rankings(people):
   return {person: generate_random_ranking_for_person(person, people) for person in people}
 
+def generate_random_class_ranking_for_class(classes):
+  #NOTE: every class gets to rank itself as well (e.g. people in class 3 like sitting next to others in class 3 most)
+  classes_copy = classes.copy() 
+  random.shuffle(classes_copy)
+  return tuple(classes_copy)
+
+def generate_random_class_rankings(classes):
+  return {c: generate_random_class_ranking_for_class(classes) for c in classes} #{0: (2,3,1,0), 1: (2,0,3,1), ...}
+
 # rankings -> utility
 def ranking_to_normalized_utility(ordering, n):
   n_others = n-1
@@ -84,6 +100,24 @@ def ranking_to_binary_utility(ordering, n):
   n_others = n-1
   # First person gets 1, everyone else gets 0
   return {person: (1.0 if i == 0 else 0.0) for i, person in enumerate(ordering)}
+
+def class_ranking_to_normalized_utility(people, class_assignment, class_ranking, n, k):
+  total = (k-1)*k/2 #each class ranks the other k-1 classes w utility: k-1, k-2, ..., 1
+
+  profile = {}
+  for p in people:
+    profile[p] = {}
+
+    p_class = class_assignment[p]
+    p_class_ranking = class_ranking[p_class]
+
+    for o in people:
+      if(p != o):
+        o_class = class_assignment[o]
+        rank = p_class_ranking.index(o_class) #ranking index (0 = 1st place, 1 = 2nd place, etc.)
+        profile[p][o] = (k-1-rank)/total #utility
+
+  return profile
 
 def generate_utilities(rankings, utility_func, n):
   return {person: utility_func(ranking, n) for person, ranking in rankings.items()}
