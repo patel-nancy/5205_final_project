@@ -30,17 +30,17 @@ def analyze_stability_welfare_relationship(n, num_processes, utility_func, utili
   people = [excel_label(i) for i in range(n)]
   arrangements = get_circular_arrangements(people)
 
-  print(f"\n{'='*60}")
-  print(f"Running analysis for n={n} with {utility_name} utility")
-  print(f"{'='*60}")
-  print(f"Number of unique circular arrangements: {len(arrangements)}")
+  # print(f"\n{'='*60}")
+  # print(f"Running analysis for n={n} with {utility_name} utility")
+  # print(f"{'='*60}")
+  # print(f"Number of unique circular arrangements: {len(arrangements)}")
 
   if (n > 5): #too many to generate all ranking profiles possible, so sample instead
     rankings_list = [generate_random_rankings(people) for _ in range(NUM_RANDOM_SAMPLES)]
   else:
     rankings_list = list(generate_all_rankings(people))
   total_profiles = len(rankings_list)
-  print(f"Total number of ranking profiles: {total_profiles}")
+  # print(f"Total number of ranking profiles: {total_profiles}")
 
   # Create partial function with fixed arguments
   process_func = partial(process_single_ranking,
@@ -57,18 +57,18 @@ def analyze_stability_welfare_relationship(n, num_processes, utility_func, utili
   unstable_count = total_profiles - stable_count
 
   # Print summary table
-  print(f"\n{'='*60}")
-  print(f"SUMMARY TABLE - {utility_name.upper()} UTILITY (n={n})")
-  print(f"{'='*60}")
-  print(f"{'Category':<50} {'Count':>8}")
-  print(f"{'-'*60}")
-  print(f"{'Profiles with >=1 stable welfare-max arrangement':<50} {stable_count:>8}")
-  print(f"{'Profiles with NO stable welfare-max arrangement':<50} {unstable_count:>8}")
-  print(f"{'-'*60}")
-  print(f"{'TOTAL PROFILES':<50} {total_profiles:>8}")
-  print(f"{'='*60}")
-  print(f"Percentage with stable welfare-max: {100*stable_count/total_profiles:.2f}%")
-  print(f"{'='*60}\n")
+  # print(f"\n{'='*60}")
+  # print(f"SUMMARY TABLE - {utility_name.upper()} UTILITY (n={n})")
+  # print(f"{'='*60}")
+  # print(f"{'Category':<50} {'Count':>8}")
+  # print(f"{'-'*60}")
+  # print(f"{'Profiles with >=1 stable welfare-max arrangement':<50} {stable_count:>8}")
+  # print(f"{'Profiles with NO stable welfare-max arrangement':<50} {unstable_count:>8}")
+  # print(f"{'-'*60}")
+  # print(f"{'TOTAL PROFILES':<50} {total_profiles:>8}")
+  # print(f"{'='*60}")
+  # print(f"Percentage with stable welfare-max: {100*stable_count/total_profiles:.2f}%")
+  # print(f"{'='*60}\n")
 
   return {
     'utility_name': utility_name,
@@ -93,7 +93,7 @@ def main():
       (ranking_to_binary_utility, "binary")
     ]
 
-    for n in range(4, 10):    
+    for n in range(4, 9):    
         results = []
         for utility_func, utility_name in utility_functions:
             result = analyze_stability_welfare_relationship(n, num_processes, utility_func, utility_name)
