@@ -314,11 +314,11 @@ def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_
   max_seat_idx = -1
 
   if utility_name == "normalized":
-    median_individual_welfare = (n-1)/2
+    median_individual_welfare = (n-1)/2 #utilities: n-1, n-2, ..., 1
   elif utility_name == "harmonic":
-    median_individual_welfare = 2 * 1/(n-1)
+    median_individual_welfare = 2 * 1/(n-1) #utilities: 1, 1/2, ..., 1/(n-1)
   elif utility_name == "binary":
-    median_individual_welfare = 1/(n-1) #P[sitting next to your favorite person] = 1/(n-1)
+    median_individual_welfare = 0 #utilities: 1, 0, 0, ...
 
   #look for a "good" enough seat (sitting next to at least one person in your top half rankings)
   for seat_idx, seat in enumerate(arrangement):
