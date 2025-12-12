@@ -309,37 +309,42 @@ def run_swap_blocking_pairs(profile, arr, init_blocking_pair):
       prev_arrangement = next_arrangement
   return None
 
-def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_name):
-  max_individual_welfare = -1
-  max_seat_idx = -1
-
-  if utility_name == "normalized":
-    median_individual_welfare = (n-1)/2
-  elif utility_name == "harmonic":
-    median_individual_welfare = 2 * 1/(n-1)
-  elif utility_name == "binary":
-    median_individual_welfare = 1/(n-1) #P[sitting next to your favorite person] = 1/(n-1)
+def place_in_arrangement(n, person, arrangement, ranking, utility_func):
+  best_guest_ranked_idx = n
+  best_seat_idx = -1
 
   #look for a "good" enough seat (sitting next to at least one person in your top half rankings)
   for seat_idx, seat in enumerate(arrangement):
     #only check empty seats
     if seat == '':
       neighbors = get_neighbors(arrangement, seat, seat_idx)
-
-      individual_welfare = 0
+      neighbor_ranking_idxs = [n, n] #starts out of bounds (only n-1 rankings). the lower the index, the higher rated the neighbor is.
 
       # not an empty neighbor
       if neighbors[0] != '':
-        individual_welfare += profile[person][neighbors[0]]
-      if neighbors[1] != '':
-        individual_welfare += profile[person][neighbors[1]]
+        neighbor_ranking_idxs[0] = ranking[person].index(neighbors[0]) 
 
-      if (individual_welfare >= (median_individual_welfare)):
-        max_individual_welfare = individual_welfare
-        max_seat_idx = seat_idx
+      if neighbors[1] != '':
+        neighbor_ranking_idxs[1] = ranking[person].index(neighbors[1])
+
+      #determine which guest is ranked higher
+      higher_ranked_guest = ''
+      higher_ranked_guest_idx = n
+      if(neighbor_ranking_idxs[0] < neighbor_ranking_idxs[1]):
+        higher_ranked_guest = neighbors[0]
+        higher_ranked_guest_idx = neighbor_ranking_idxs[0]
+
+      elif(neighbor_ranking_idxs[0] > neighbor_ranking_idxs[1]):
+        higher_ranked_guest = neighbors[1]
+        higher_ranked_guest_idx = neighbor_ranking_idxs[1]
+
+      #sit next to the guest that is in your top half (closest to the favorite)
+      if(higher_ranked_guest_idx < (n-1)/2 and higher_ranked_guest_idx < best_guest_ranked_idx):
+        best_seat_idx = seat_idx 
+        best_guest_ranked_idx = higher_ranked_guest_idx       
 
   #didn't find a "good" enough seat
-  if(max_seat_idx == -1):
+  if(best_seat_idx == -1):
     possible_seat_idxs = []
 
     #find all empty seats
@@ -347,21 +352,21 @@ def place_in_arrangement(n, person, arrangement, profile, utility_func, utility_
       if seat == '':
         possible_seat_idxs.append(seat_idx)
 
-    max_seat_idx = random.choice(possible_seat_idxs)
+    best_seat_idx = random.choice(possible_seat_idxs)
 
-  arrangement[max_seat_idx] = person
+  arrangement[best_seat_idx] = person
   return arrangement
 
-def run_naive_sit_as_you_come(n, people, profile, utility_func, utility_name):
+def run_naive_sit_as_you_come(n, people, ranking, utility_func):
   starting_order = generate_random_arrangement(people)
   final_arrangement = ['' for i in range(n)]  #['', '', ...]
 
   for p in starting_order:
-    final_arrangement = place_in_arrangement(n, p, final_arrangement, profile, utility_func, utility_name)
+    final_arrangement = place_in_arrangement(n, p, final_arrangement, ranking, utility_func)
 
   return final_arrangement
 
-def run_naive_swapping(people, profile, utility_func, utility_name):
+def run_naive_swapping(people, profile):
   starting_arrangement = generate_random_arrangement(people)
   init_blocking_pair = find_blocking_pair(profile, starting_arrangement)
 
