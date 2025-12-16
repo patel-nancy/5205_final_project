@@ -20,6 +20,8 @@ def analyze_naive_sit_as_you_come(n, utility_func, utility_name, NUM_RANDOM_SAMP
     print("Percentage Recovered:", num_times_recovered/NUM_RANDOM_SAMPLES)
 
 def main():
+    random.seed(GLOBAL_SEED)
+    
     NUM_SAMPLES = 100
 
     utility_functions = [
