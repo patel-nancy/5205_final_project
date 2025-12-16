@@ -1,19 +1,19 @@
 ================================================================================
-n=3
+n=4
 
 
 normalized
-Percentage Recovered: 1.0
+Percentage Recovered: 0.78
 Percentage of Recovered Found After Initial SA: 1.0
 Percentage of Recovered Found After Swapping Blocking Pairs: 0.0
-Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (No Stable Solution Exists): 0.22
 Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 1.0
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.0
-Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Recovered: 0.76
+Percentage of Recovered Found After Initial SA: 0.9868421052631579
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.013157894736842105
+Percentage Not Recovered (No Stable Solution Exists): 0.24
 Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
 binary
@@ -25,22 +25,48 @@ Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
-n=4
+n=5
 
 
 normalized
-Percentage Recovered: 0.69
-Percentage of Recovered Found After Initial SA: 0.5942028985507246
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.4057971014492754
-Percentage Not Recovered (No Stable Solution Exists): 0.3
-Percentage Not Recovered (Stable Solution Exists): 0.01
+Percentage Recovered: 0.61
+Percentage of Recovered Found After Initial SA: 0.9508196721311475
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.04918032786885246
+Percentage Not Recovered (No Stable Solution Exists): 0.36
+Percentage Not Recovered (Stable Solution Exists): 0.03
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.81
-Percentage of Recovered Found After Initial SA: 0.7283950617283951
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.2716049382716049
-Percentage Not Recovered (No Stable Solution Exists): 0.17
+Percentage Recovered: 0.7
+Percentage of Recovered Found After Initial SA: 0.8285714285714286
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.17142857142857143
+Percentage Not Recovered (No Stable Solution Exists): 0.28
 Percentage Not Recovered (Stable Solution Exists): 0.02
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 1.0
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.0
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.0
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=6
+
+
+normalized
+Percentage Recovered: 0.82
+Percentage of Recovered Found After Initial SA: 0.8414634146341463
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.15853658536585366
+Percentage Not Recovered (No Stable Solution Exists): 0.11
+Percentage Not Recovered (Stable Solution Exists): 0.07
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.75
+Percentage of Recovered Found After Initial SA: 0.8666666666666667
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.13333333333333333
+Percentage Not Recovered (No Stable Solution Exists): 0.16
+Percentage Not Recovered (Stable Solution Exists): 0.09
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
@@ -51,81 +77,29 @@ Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
-n=5
-
-
-normalized
-Percentage Recovered: 0.66
-Percentage of Recovered Found After Initial SA: 0.9242424242424242
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.07575757575757576
-Percentage Not Recovered (No Stable Solution Exists): 0.27
-Percentage Not Recovered (Stable Solution Exists): 0.07
---------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.62
-Percentage of Recovered Found After Initial SA: 0.8225806451612904
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.1774193548387097
-Percentage Not Recovered (No Stable Solution Exists): 0.28
-Percentage Not Recovered (Stable Solution Exists): 0.1
---------------------------------------------------------------------------------
-binary
-Percentage Recovered: 0.99
-Percentage of Recovered Found After Initial SA: 0.7070707070707071
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.29292929292929293
-Percentage Not Recovered (No Stable Solution Exists): 0.0
-Percentage Not Recovered (Stable Solution Exists): 0.01
---------------------------------------------------------------------------------
-================================================================================
-================================================================================
-n=6
-
-
-normalized
-Percentage Recovered: 0.77
-Percentage of Recovered Found After Initial SA: 0.6883116883116883
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.3116883116883117
-Percentage Not Recovered (No Stable Solution Exists): 0.15
-Percentage Not Recovered (Stable Solution Exists): 0.08
---------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.74
-Percentage of Recovered Found After Initial SA: 0.527027027027027
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.47297297297297297
-Percentage Not Recovered (No Stable Solution Exists): 0.2
-Percentage Not Recovered (Stable Solution Exists): 0.06
---------------------------------------------------------------------------------
-binary
-Percentage Recovered: 0.99
-Percentage of Recovered Found After Initial SA: 0.6666666666666666
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.3333333333333333
-Percentage Not Recovered (No Stable Solution Exists): 0.0
-Percentage Not Recovered (Stable Solution Exists): 0.01
---------------------------------------------------------------------------------
-================================================================================
-================================================================================
 n=7
 
 
 normalized
-Percentage Recovered: 0.91
-Percentage of Recovered Found After Initial SA: 0.7032967032967034
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.2967032967032967
-Percentage Not Recovered (No Stable Solution Exists): 0.03
-Percentage Not Recovered (Stable Solution Exists): 0.06
+Percentage Recovered: 0.95
+Percentage of Recovered Found After Initial SA: 0.8421052631578947
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.15789473684210525
+Percentage Not Recovered (No Stable Solution Exists): 0.02
+Percentage Not Recovered (Stable Solution Exists): 0.03
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.8
-Percentage of Recovered Found After Initial SA: 0.575
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.425
-Percentage Not Recovered (No Stable Solution Exists): 0.1
-Percentage Not Recovered (Stable Solution Exists): 0.1
+Percentage Recovered: 0.9
+Percentage of Recovered Found After Initial SA: 0.7333333333333333
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.26666666666666666
+Percentage Not Recovered (No Stable Solution Exists): 0.06
+Percentage Not Recovered (Stable Solution Exists): 0.04
 --------------------------------------------------------------------------------
 binary
-Percentage Recovered: 0.98
-Percentage of Recovered Found After Initial SA: 0.5204081632653061
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.47959183673469385
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.95
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.05
 Percentage Not Recovered (No Stable Solution Exists): 0.0
-Percentage Not Recovered (Stable Solution Exists): 0.02
+Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -133,23 +107,23 @@ n=8
 
 
 normalized
-Percentage Recovered: 0.93
-Percentage of Recovered Found After Initial SA: 0.6666666666666666
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.3333333333333333
-Percentage Not Recovered (No Stable Solution Exists): 0.02
-Percentage Not Recovered (Stable Solution Exists): 0.05
+Percentage Recovered: 0.96
+Percentage of Recovered Found After Initial SA: 0.78125
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.21875
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.04
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.86
-Percentage of Recovered Found After Initial SA: 0.38372093023255816
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.6162790697674418
-Percentage Not Recovered (No Stable Solution Exists): 0.05
-Percentage Not Recovered (Stable Solution Exists): 0.09
+Percentage Recovered: 0.93
+Percentage of Recovered Found After Initial SA: 0.6129032258064516
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.3870967741935484
+Percentage Not Recovered (No Stable Solution Exists): 0.01
+Percentage Not Recovered (Stable Solution Exists): 0.06
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.43
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.57
+Percentage of Recovered Found After Initial SA: 0.95
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.05
 Percentage Not Recovered (No Stable Solution Exists): 0.0
 Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
@@ -159,23 +133,23 @@ n=9
 
 
 normalized
+Percentage Recovered: 0.98
+Percentage of Recovered Found After Initial SA: 0.6632653061224489
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.336734693877551
+Percentage Not Recovered (No Stable Solution Exists): 0.0
+Percentage Not Recovered (Stable Solution Exists): 0.02
+--------------------------------------------------------------------------------
+harmonic
 Percentage Recovered: 0.95
-Percentage of Recovered Found After Initial SA: 0.6
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.4
+Percentage of Recovered Found After Initial SA: 0.5578947368421052
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.4421052631578947
 Percentage Not Recovered (No Stable Solution Exists): 0.0
 Percentage Not Recovered (Stable Solution Exists): 0.05
 --------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.83
-Percentage of Recovered Found After Initial SA: 0.2891566265060241
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7108433734939759
-Percentage Not Recovered (No Stable Solution Exists): 0.0
-Percentage Not Recovered (Stable Solution Exists): 0.17
---------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.36
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.64
+Percentage of Recovered Found After Initial SA: 0.92
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.08
 Percentage Not Recovered (No Stable Solution Exists): 0.0
 Percentage Not Recovered (Stable Solution Exists): 0.0
 --------------------------------------------------------------------------------
@@ -185,19 +159,19 @@ n=10
 
 
 normalized
-Percentage Recovered: 0.89
-Percentage of Recovered Found After Initial SA: 0.42696629213483145
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.5730337078651685
+Percentage Recovered: 0.97
+Percentage of Recovered Found After Initial SA: 0.5876288659793815
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.41237113402061853
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.81
-Percentage of Recovered Found After Initial SA: 0.13580246913580246
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.8641975308641975
+Percentage Recovered: 0.95
+Percentage of Recovered Found After Initial SA: 0.4105263157894737
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.5894736842105263
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.35
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.65
+Percentage of Recovered Found After Initial SA: 0.94
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.06
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -205,19 +179,19 @@ n=11
 
 
 normalized
-Percentage Recovered: 0.95
-Percentage of Recovered Found After Initial SA: 0.2631578947368421
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7368421052631579
+Percentage Recovered: 0.91
+Percentage of Recovered Found After Initial SA: 0.46153846153846156
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.5384615384615384
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.85
-Percentage of Recovered Found After Initial SA: 0.1411764705882353
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.8588235294117647
+Percentage Recovered: 0.91
+Percentage of Recovered Found After Initial SA: 0.23076923076923078
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.7692307692307693
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.3
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7
+Percentage of Recovered Found After Initial SA: 0.94
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.06
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -226,18 +200,18 @@ n=12
 
 normalized
 Percentage Recovered: 0.94
-Percentage of Recovered Found After Initial SA: 0.2553191489361702
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7446808510638298
+Percentage of Recovered Found After Initial SA: 0.425531914893617
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.574468085106383
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.8
-Percentage of Recovered Found After Initial SA: 0.05
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.95
+Percentage Recovered: 0.9
+Percentage of Recovered Found After Initial SA: 0.14444444444444443
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.8555555555555555
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.34
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.66
+Percentage of Recovered Found After Initial SA: 0.87
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.13
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -246,18 +220,18 @@ n=13
 
 normalized
 Percentage Recovered: 0.87
-Percentage of Recovered Found After Initial SA: 0.13793103448275862
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.8620689655172413
+Percentage of Recovered Found After Initial SA: 0.1724137931034483
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.8275862068965517
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.75
-Percentage of Recovered Found After Initial SA: 0.05333333333333334
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9466666666666667
+Percentage Recovered: 0.87
+Percentage of Recovered Found After Initial SA: 0.08045977011494253
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9195402298850575
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.37
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.63
+Percentage of Recovered Found After Initial SA: 0.88
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.12
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -265,19 +239,19 @@ n=14
 
 
 normalized
-Percentage Recovered: 0.82
-Percentage of Recovered Found After Initial SA: 0.10975609756097561
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.8902439024390244
+Percentage Recovered: 0.86
+Percentage of Recovered Found After Initial SA: 0.16279069767441862
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.8372093023255814
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.67
-Percentage of Recovered Found After Initial SA: 0.014925373134328358
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9850746268656716
+Percentage Recovered: 0.85
+Percentage of Recovered Found After Initial SA: 0.07058823529411765
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9294117647058824
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.26
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.74
+Percentage of Recovered Found After Initial SA: 0.86
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.14
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -285,19 +259,19 @@ n=15
 
 
 normalized
+Percentage Recovered: 0.84
+Percentage of Recovered Found After Initial SA: 0.09523809523809523
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9047619047619048
+--------------------------------------------------------------------------------
+harmonic
 Percentage Recovered: 0.75
 Percentage of Recovered Found After Initial SA: 0.02666666666666667
 Percentage of Recovered Found After Swapping Blocking Pairs: 0.9733333333333334
 --------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.69
-Percentage of Recovered Found After Initial SA: 0.028985507246376812
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9710144927536232
---------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.3
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7
+Percentage of Recovered Found After Initial SA: 0.82
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.18
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -305,19 +279,19 @@ n=16
 
 
 normalized
-Percentage Recovered: 0.57
-Percentage of Recovered Found After Initial SA: 0.05263157894736842
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9473684210526315
+Percentage Recovered: 0.74
+Percentage of Recovered Found After Initial SA: 0.0945945945945946
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9054054054054054
 --------------------------------------------------------------------------------
 harmonic
-Percentage Recovered: 0.56
-Percentage of Recovered Found After Initial SA: 0.0
-Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
+Percentage Recovered: 0.74
+Percentage of Recovered Found After Initial SA: 0.02702702702702703
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.972972972972973
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.32
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.68
+Percentage of Recovered Found After Initial SA: 0.86
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.14
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -325,9 +299,49 @@ n=17
 
 
 normalized
-Percentage Recovered: 0.56
-Percentage of Recovered Found After Initial SA: 0.05357142857142857
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9464285714285714
+Percentage Recovered: 0.6
+Percentage of Recovered Found After Initial SA: 0.05
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.95
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.5
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.79
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.21
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=18
+
+
+normalized
+Percentage Recovered: 0.42
+Percentage of Recovered Found After Initial SA: 0.023809523809523808
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9761904761904762
+--------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.58
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
+--------------------------------------------------------------------------------
+binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.81
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.19
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=19
+
+
+normalized
+Percentage Recovered: 0.49
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
 --------------------------------------------------------------------------------
 harmonic
 Percentage Recovered: 0.53
@@ -336,48 +350,8 @@ Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
 --------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.3
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.7
---------------------------------------------------------------------------------
-================================================================================
-================================================================================
-n=18
-
-
-normalized
-Percentage Recovered: 0.46
-Percentage of Recovered Found After Initial SA: 0.043478260869565216
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9565217391304348
---------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.45
-Percentage of Recovered Found After Initial SA: 0.0
-Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
---------------------------------------------------------------------------------
-binary
-Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.29
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.71
---------------------------------------------------------------------------------
-================================================================================
-================================================================================
-n=19
-
-
-normalized
-Percentage Recovered: 0.46
-Percentage of Recovered Found After Initial SA: 0.0
-Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
---------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.39
-Percentage of Recovered Found After Initial SA: 0.0
-Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
---------------------------------------------------------------------------------
-binary
-Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.28
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.72
+Percentage of Recovered Found After Initial SA: 0.88
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.12
 --------------------------------------------------------------------------------
 ================================================================================
 ================================================================================
@@ -386,17 +360,17 @@ n=20
 
 normalized
 Percentage Recovered: 0.27
-Percentage of Recovered Found After Initial SA: 0.037037037037037035
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.9629629629629629
---------------------------------------------------------------------------------
-harmonic
-Percentage Recovered: 0.38
 Percentage of Recovered Found After Initial SA: 0.0
 Percentage of Recovered Found After Swapping Blocking Pairs: 1.0
 --------------------------------------------------------------------------------
+harmonic
+Percentage Recovered: 0.45
+Percentage of Recovered Found After Initial SA: 0.022222222222222223
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.9777777777777777
+--------------------------------------------------------------------------------
 binary
 Percentage Recovered: 1.0
-Percentage of Recovered Found After Initial SA: 0.25
-Percentage of Recovered Found After Swapping Blocking Pairs: 0.75
+Percentage of Recovered Found After Initial SA: 0.86
+Percentage of Recovered Found After Swapping Blocking Pairs: 0.14
 --------------------------------------------------------------------------------
 ================================================================================
