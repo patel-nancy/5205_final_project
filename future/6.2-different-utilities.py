@@ -29,11 +29,7 @@ def analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func,
         final_nonstable_arrangments = {}
 
         #parallelize 10 SA runs -- looking for global MAX
-        sa_seeds = [random.randrange(2**32) for _ in range(NUM_PARALLEL_RUNS)] #each parallel process needs its own seed to produce independent runs
-        sa_args = [
-            (n, people, profile, utility_func, utility_name, True, seed)
-            for seed in sa_seeds
-        ]
+        sa_args = [(n, people, profile, utility_func, utility_name, True) for _ in range(NUM_PARALLEL_RUNS)]
         with Pool(processes=min(NUM_PARALLEL_RUNS, cpu_count())) as pool:
             final_arrangements = pool.map(run_single_sa, sa_args)
 
@@ -65,12 +61,7 @@ def analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func,
                 final_nonstable_arrangments = {}
 
                 #parallelize 10 SA runs -- looking for global MIN
-                sa_seeds = [random.randrange(2**32) for _ in range(NUM_PARALLEL_RUNS)] #each parallel process needs its own seed to produce independent runs
-                sa_args = [
-                    (n, people, profile, utility_func, utility_name, False, seed)
-                    for seed in sa_seeds
-                ]
-
+                sa_args = [(n, people, profile, utility_func, utility_name, False) for _ in range(NUM_PARALLEL_RUNS)]
                 with Pool(processes=min(NUM_PARALLEL_RUNS, cpu_count())) as pool:
                     final_arrangements = pool.map(run_single_sa, sa_args)
 
@@ -148,14 +139,12 @@ def analyze_simulated_annealing_max_min_swapping_blocking_pairs(n, utility_func,
         print("Percentage Not Recovered (Stable Solution Exists):", num_times_not_recovered_but_stable_solution/NUM_RANDOM_SAMPLES)
 
 def main():
-    random.seed(GLOBAL_SEED)
-
     NUM_SAMPLES = 100
   
     utility_functions = [
-        (ranking_to_normalized_utility, "normalized"),
-        (ranking_to_harmonic_utility, "harmonic"),
-        (ranking_to_binary_utility, "binary")
+        (ranking_to_normalized_negative_utility, "negative normalized"),
+        (ranking_to_binary_negative_utility, "negative binary"),
+        (ranking_to_skewed_utility, "skewed at n/3")
     ]
 
     for n in range(20, 27):

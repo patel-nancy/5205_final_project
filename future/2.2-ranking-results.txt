@@ -1,0 +1,108 @@
+n=3, negative normalized
+Percentage Recovered: 1.0
+n=3, negative binary
+Percentage Recovered: 1.0
+n=3, skewed at n/3
+Percentage Recovered: 1.0
+n=4, negative normalized
+Percentage Recovered: 0.6
+n=4, negative binary
+Percentage Recovered: 0.71
+n=4, skewed at n/3
+Percentage Recovered: 0.51
+n=5, negative normalized
+Percentage Recovered: 0.22
+n=5, negative binary
+Percentage Recovered: 0.68
+n=5, skewed at n/3
+Percentage Recovered: 0.18
+n=6, negative normalized
+Percentage Recovered: 0.11
+n=6, negative binary
+Percentage Recovered: 0.65
+n=6, skewed at n/3
+Percentage Recovered: 0.09
+n=7, negative normalized
+Percentage Recovered: 0.05
+n=7, negative binary
+Percentage Recovered: 0.66
+n=7, skewed at n/3
+Percentage Recovered: 0.06
+n=8, negative normalized
+Percentage Recovered: 0.02
+n=8, negative binary
+Percentage Recovered: 0.61
+n=8, skewed at n/3
+Percentage Recovered: 0.02
+n=9, negative normalized
+Percentage Recovered: 0.0
+n=9, negative binary
+Percentage Recovered: 0.69
+n=9, skewed at n/3
+Percentage Recovered: 0.03
+n=10, negative normalized
+Percentage Recovered: 0.0
+n=10, negative binary
+Percentage Recovered: 0.67
+n=10, skewed at n/3
+Percentage Recovered: 0.03
+n=11, negative normalized
+Percentage Recovered: 0.02
+n=11, negative binary
+Percentage Recovered: 0.61
+n=11, skewed at n/3
+Percentage Recovered: 0.01
+n=12, negative normalized
+Percentage Recovered: 0.01
+n=12, negative binary
+Percentage Recovered: 0.73
+n=12, skewed at n/3
+Percentage Recovered: 0.0
+n=13, negative normalized
+Percentage Recovered: 0.0
+n=13, negative binary
+Percentage Recovered: 0.64
+n=13, skewed at n/3
+Percentage Recovered: 0.0
+n=14, negative normalized
+Percentage Recovered: 0.0
+n=14, negative binary
+Percentage Recovered: 0.67
+n=14, skewed at n/3
+Percentage Recovered: 0.0
+n=15, negative normalized
+Percentage Recovered: 0.0
+n=15, negative binary
+Percentage Recovered: 0.54
+n=15, skewed at n/3
+Percentage Recovered: 0.0
+n=16, negative normalized
+Percentage Recovered: 0.0
+n=16, negative binary
+Percentage Recovered: 0.55
+n=16, skewed at n/3
+Percentage Recovered: 0.0
+n=17, negative normalized
+Percentage Recovered: 0.0
+n=17, negative binary
+Percentage Recovered: 0.59
+n=17, skewed at n/3
+Percentage Recovered: 0.0
+n=18, negative normalized
+Percentage Recovered: 0.0
+n=18, negative binary
+Percentage Recovered: 0.71
+n=18, skewed at n/3
+Percentage Recovered: 0.0
+n=19, negative normalized
+Percentage Recovered: 0.0
+n=19, negative binary
+Percentage Recovered: 0.6
+n=19, skewed at n/3
+Percentage Recovered: 0.0
+n=20, negative normalized
+Percentage Recovered: 0.0
+n=20, negative binary
+Percentage Recovered: 0.7
+n=20, skewed at n/3
+Percentage Recovered: 0.0

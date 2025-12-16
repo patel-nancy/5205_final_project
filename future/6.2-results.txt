@@ -1,0 +1,178 @@
+================================================================================
+n=20
+
+
+negative normalized
+Percentage Recovered: 0.42
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.6904761904761905
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.30952380952380953
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.46
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.54
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.11
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.2727272727272727
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.7272727272727273
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=21
+
+
+negative normalized
+Percentage Recovered: 0.3
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.6666666666666666
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.3333333333333333
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.43
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.57
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.01
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.0
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 1.0
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=22
+
+
+negative normalized
+Percentage Recovered: 0.18
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.8333333333333334
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.16666666666666666
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.44
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.56
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.02
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 1.0
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=23
+
+
+negative normalized
+Percentage Recovered: 0.1
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.8
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.2
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.36
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.64
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.03
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.3333333333333333
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.6666666666666666
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=24
+
+
+negative normalized
+Percentage Recovered: 0.08
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.625
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.375
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.46
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.54
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.02
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 1.0
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=25
+
+
+negative normalized
+Percentage Recovered: 0.04
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.75
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.25
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.34
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.66
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.02
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.5
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.5
+--------------------------------------------------------------------------------
+================================================================================
+================================================================================
+n=26
+
+
+negative normalized
+Percentage Recovered: 0.03
+Percentage of Recovered Found After Initial SA: 0.0
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.6666666666666666
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.3333333333333333
+--------------------------------------------------------------------------------
+negative binary
+Percentage Recovered: 1.0
+Percentage of Recovered Found After Initial SA: 0.45
+Percentage of Recovered Found After Initial (Maxima) Swapping Blocking Pairs: 0.55
+Percentage of Recovered Found After Second SA: 0.0
+Percentage of Recovered Found After Second (Minima) Swapping Blocking Pairs: 0.0
+--------------------------------------------------------------------------------
+skewed at n/3
+Percentage Recovered: 0.0
+--------------------------------------------------------------------------------
+================================================================================

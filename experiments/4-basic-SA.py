@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from utils import *
 from multiprocessing import Pool, cpu_count
 
-def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RANDOM_SAMPLES=7_962_624, findMax=True):
+def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RANDOM_SAMPLES=7_962_624):
   NUM_PARALLEL_RUNS = 10 
 
   people = [excel_label(i) for i in range(n)]
@@ -21,7 +21,11 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
     num_stable = 0
 
     #parallelize 10 SA runs
-    sa_args = [(n, people, profile, utility_func, utility_name, findMax) for _ in range(NUM_PARALLEL_RUNS)]
+    sa_seeds = [random.randrange(2**32) for _ in range(NUM_PARALLEL_RUNS)] #each parallel process needs its own seed to produce independent runs
+    sa_args = [
+      (n, people, profile, utility_func, utility_name, True, seed)
+      for seed in sa_seeds
+    ]
     with Pool(processes=min(NUM_PARALLEL_RUNS, cpu_count())) as pool:
       final_arrangements = pool.map(run_single_sa, sa_args)
 
@@ -47,7 +51,7 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
   print("Percentage Not Recovered (Stable Solution Exists):", num_times_not_recovered_but_stable_solution/NUM_RANDOM_SAMPLES)
 
 def main():
-    # #TODO: format!
+    random.seed(GLOBAL_SEED)
 
     NUM_SAMPLES = 100
 

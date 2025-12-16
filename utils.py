@@ -2,8 +2,7 @@ import itertools
 import random
 import math
 
-SEED = 5 #global for reproducibility
-random.seed(SEED)
+GLOBAL_SEED = 5 #global for reproducibility
 
 def excel_label(i):
   #A, B, ..., Z, AA, ...
@@ -98,8 +97,33 @@ def ranking_to_harmonic_utility(ordering, n):
 
 def ranking_to_binary_utility(ordering, n):
   n_others = n-1
-  # First person gets 1, everyone else gets 0
+  # first person gets 1, everyone else gets 0
   return {person: (1.0 if i == 0 else 0.0) for i, person in enumerate(ordering)}
+
+def ranking_to_normalized_negative_utility(ordering, n):
+  n_others = n-1
+  score = [i*-1 for i in range(n_others)]
+  total = abs(sum(score))
+  return {person: score[i]/total for i, person in enumerate(ordering)}
+
+def ranking_to_binary_negative_utility(ordering, n):
+  n_others = n-1
+  return {person: (-1.0 if i == (n_others-1) else 0.0) for i, person in enumerate(ordering)}
+
+def ranking_to_skewed_utility(ordering, n):
+  n_others = n-1
+  score = []
+
+  skew = n_others / 3
+
+  for i in range(n_others):
+    if(i < skew):
+      score.append(n_others - i)
+    else:
+      score.append(skew - i)
+
+  return {person: score[i] for i, person in enumerate(ordering)}
+  
 
 def class_ranking_to_normalized_utility(people, class_assignment, class_ranking, n, k):
   total = (k-1)*k/2 #each class ranks the other k-1 classes w utility: k-1, k-2, ..., 1
@@ -206,7 +230,7 @@ def swap_seats(prev_arrangement):
 
 def run_round(profile, prev_arrangement, T, findMax):
   """ Returns: next arrangement, based on utility increasing/decreasing total utility"""
-  T_min = 0.001 #NOTE: could be lower?
+  T_min = 0.001
 
   prev_utility = calculate_total_utility(profile, prev_arrangement)
 
@@ -255,7 +279,7 @@ def run_simulated_annealing(n, people, profile, utility_func, utility_name, find
   #initial parameters
   curr_arrangement = generate_random_arrangement(people) #technically this is more than the reduced number of arrangements...
   T = 2*n #NOTE: typically upper bound of total utility. normalized/binary/harmonic UB = 1*2*n=2n
-  MAX_ROUNDS = 10000
+  MAX_ROUNDS = 10_000
   gamma = 0.99
   prev_and_curr_same = 0
 
@@ -277,7 +301,8 @@ def run_simulated_annealing(n, people, profile, utility_func, utility_name, find
   
 def run_single_sa(args):
   """Helper function to run a single SA run - used for parallelization."""
-  n, people, profile, utility_func, utility_name, findMax = args
+  n, people, profile, utility_func, utility_name, findMax, seed = args   
+  random.seed(seed) #reproducibility
   return run_simulated_annealing(n, people, profile, utility_func, utility_name, findMax)
 
 def swap_blocking_pair_seats(prev_arrangement, seat, other):

@@ -6,7 +6,6 @@ from utils import *
 def analyze_naive_swapping(n, utility_func, NUM_RANDOM_SAMPLES=7_962_624):
     people = [excel_label(i) for i in range(n)]
 
-    #TODO: should change this based on n so a gajillion rankings for n=3 aren't generated
     rankings = [generate_random_rankings(people) for _ in range(NUM_RANDOM_SAMPLES)]
 
     num_times_recovered = 0
@@ -21,6 +20,8 @@ def analyze_naive_swapping(n, utility_func, NUM_RANDOM_SAMPLES=7_962_624):
     print("Percentage Recovered:", num_times_recovered/NUM_RANDOM_SAMPLES)
 
 def main():
+    random.seed(GLOBAL_SEED)
+
     NUM_SAMPLES = 100
 
     utility_functions = [
