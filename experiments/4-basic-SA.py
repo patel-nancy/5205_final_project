@@ -53,7 +53,7 @@ def analyze_simulated_annealing_accuracy(n, utility_func, utility_name, NUM_RAND
 def main():
     random.seed(GLOBAL_SEED)
 
-    NUM_SAMPLES = 100
+    NUM_SAMPLES = 300
 
     utility_functions = [
       (ranking_to_normalized_utility, "normalized"),
@@ -62,7 +62,7 @@ def main():
     ]
 
 
-    for n in range(4, 10):
+    for n in range(4, 11):
       print("="*80)
       print(f"n={n}")
       print("\n")
